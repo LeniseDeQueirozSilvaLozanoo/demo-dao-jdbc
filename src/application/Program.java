@@ -9,13 +9,10 @@ public class Program {
 
 	public static void main(String[] args) {
 		
-		Department obj = new Department(1, "livro");
-		System.out.println(obj);
 		
-//		Seller seller = new Seller(22, "bob", "bob@gmail.com", new Date(), 333.24, obj);
-		SellerDao sellerdao = DaoFactory.createSellerDao();
-		Seller seller = sellerdao.findById(20);
-		
+		SellerDao sellerDao = DaoFactory.createSellerDao();
+		System.out.println("***TEST 1: SELLER***\n");
+		Seller seller = sellerDao.findById(3);
 		System.out.println(seller);
 
 	}
