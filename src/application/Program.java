@@ -42,6 +42,10 @@ public class Program {
 		seller.setEmail("marta@gmail.com");
 		sellerDao.update(seller);
 		System.out.println("Update completed");
+		
+		System.out.println("\n***TEST 6: SELLER DELETE***\n");
+		sellerDao.deleteById(10);
+		System.out.println("Delete completed");
 
 	}
 
